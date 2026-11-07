@@ -13,6 +13,6 @@ public class OrderEventArgs : EventArgs
         Order = order;
 
         // TODO: Part A, demo
-        //throw new NotImplementedException();
+        throw new NotImplementedException();
     }
 }
