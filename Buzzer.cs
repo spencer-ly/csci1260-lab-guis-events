@@ -20,7 +20,7 @@ public class Buzzer
     {
         bar.OrderReady += OnOrderReady;
         // TODO: Part B, demo
-        throw new NotImplementedException();
+        //throw new NotImplementedException();
     }
 
     // Unsubscribe with the same method that subscribed.
@@ -28,13 +28,13 @@ public class Buzzer
     {
         bar.OrderReady -= OnOrderReady;
         // TODO: Part B, demo
-        throw new NotImplementedException();
+        //throw new NotImplementedException();
     }
 
     private void OnOrderReady(object? sender, OrderEventArgs e)
     {
         messages.Add($"Buzz: {e.Order.Customer}, your {e.Order.Drink} is ready.");
         // TODO: Part B, demo
-        throw new NotImplementedException();
+        //throw new NotImplementedException();
     }
 }

@@ -41,7 +41,7 @@ public class CoffeeBar
         OrderPlaced?.Invoke(this, new OrderEventArgs(order));
         return order;
         // TODO: Part A, demo
-        throw new NotImplementedException();
+        //throw new NotImplementedException();do
     }
 
     // Take the oldest order out of line, then announce it. Return the order.
@@ -61,6 +61,6 @@ public class CoffeeBar
         return order;
         // TODO: Part A, demo. Then Exercise 1: announce AllCaughtUp when
         // the order you just finished was the last one in line.
-        throw new NotImplementedException();
+        //throw new NotImplementedException();
     }
 }

@@ -24,7 +24,7 @@ public class Rewards
     {
         bar.OrderReady += OnOrderReady;
         // TODO: Exercise 2
-        throw new NotImplementedException();
+        //throw new NotImplementedException();
     }
 
     // TODO: Exercise 2. Write the handler here. Add one to the customer's

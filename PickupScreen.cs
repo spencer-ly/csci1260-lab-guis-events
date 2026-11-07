@@ -19,7 +19,7 @@ public class PickupScreen
     {
         bar.OrderReady += OnOrderReady;
         // TODO: Part B, demo
-        throw new NotImplementedException();
+        //throw new NotImplementedException();
     }
 
     // Runs every time the bar raises OrderReady.
