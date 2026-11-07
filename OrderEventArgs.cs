@@ -10,7 +10,9 @@ public class OrderEventArgs : EventArgs
 
     public OrderEventArgs(Order order)
     {
+        Order = order;
+
         // TODO: Part A, demo
-        throw new NotImplementedException();
+        //throw new NotImplementedException();
     }
 }
