@@ -48,12 +48,17 @@ public class CoffeeBar
     // Refuse with an InvalidOperationException when nothing is waiting.
     public Order FinishNext()
     {
+        if (waiting.Count == 0)
+        {
+            throw new InvalidOperationException("No orders are waiting.");
+        }
         Order order = waiting.Dequeue();
         OrderReady?.Invoke(this, new OrderEventArgs(order));
-        if (waiting.Count ==0)
+        if (waiting.Count == 0)
         {
             AllCaughtUp?.Invoke(this, EventArgs.Empty);
-        }
+            
+        } 
         return order;
         // TODO: Part A, demo. Then Exercise 1: announce AllCaughtUp when
         // the order you just finished was the last one in line.

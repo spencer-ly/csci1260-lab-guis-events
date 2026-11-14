@@ -51,14 +51,14 @@ public partial class MainWindow : Window
             StatusText.Text = ex.Message;
         }
     }
-    
+
     //show new announced order
     private void Bar_OrderPlaced(object? sender, OrderEventArgs e)
     {
         ShowWaiting();
-        
+
     }
-    
+
     //ask bar to finish oldest order
     private void ReadyButton_Click(object? sender, RoutedEventArgs e)
     {
