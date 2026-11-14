@@ -10,6 +10,19 @@
   <StackPanel Margin="20" Spacing="12">
 
     <TextBlock Text="Corner Cup" FontSize="24" FontWeight="Bold"/>
-
+	  <StackPanel Orientation="Horizontal" Spacing="8">
+		  <TextBox x:Name="CustomerBox" PlaceholderText="Name" Width="150"/>
+		  <TextBox x:Name="DrinkBox" PlaceholderText="Drink" Width="150"/>
+		  <Button x:Name="PlaceButton" Content="Place Order" Click="PlaceButton_Click"/>
+	  </StackPanel>
+	  <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,170" ColumnSpacing="12" RowSpacing="4">
+		  <TextBlock Text="Waiting" FontWeight="SemiBold"/>
+		  <TextBlock Grid.Column="1" Text="Ready for Pickup" FontWeight="SemiBold"/>
+		  <ListBox x:Name="WaitingList" Grid.Row="1"/>
+		  <ListBox x:Name="PickupList" Grid.Row="1" Grid.Column="1"/>
+	  </Grid>
+	  <Button x:Name="ReadyButton" Content="Mark next ready" Click="ReadyButton_Click"/>
+	  <TextBlock x:Name="StatusText"/>
+	  <TextBlock x:Name="RewardText" FontWeight="SemiBold"/>
   </StackPanel>
 </Window>

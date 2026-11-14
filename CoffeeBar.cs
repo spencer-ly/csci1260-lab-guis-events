@@ -48,10 +48,6 @@ public class CoffeeBar
     // Refuse with an InvalidOperationException when nothing is waiting.
     public Order FinishNext()
     {
-        if (waiting.Count == 0)
-        {
-            throw new InvalidOperationException("No orders are waiting.");
-        }
         Order order = waiting.Dequeue();
         OrderReady?.Invoke(this, new OrderEventArgs(order));
         if (waiting.Count ==0)
