@@ -63,6 +63,7 @@ public partial class MainWindow : Window
     private void ReadyButton_Click(object? sender, RoutedEventArgs e)
     {
         bar.FinishNext();
+        UpdateButtons();
     }
 
     //move finished order to pickup
